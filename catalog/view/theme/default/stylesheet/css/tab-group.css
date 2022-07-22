@@ -1,0 +1,71 @@
+.tab-group-block {
+    width: 100%
+}
+
+.tab-group-block .d-flex,
+.tab-group-block .input-group,
+.tab-group-block .row {
+    flex: 1 1 auto
+}
+
+.tab-group-module-title {
+    font-size: 2.28571rem;
+    font-weight: 600;
+    margin-bottom: 30px
+}
+
+@media (min-width:1025px) {
+    .tab-group-module-title {
+        font-size: 2.85714rem
+    }
+}
+
+@media (min-width:1025px) and (min-width:1025px) {
+    .tab-group-module-title {
+        font-size: 2.5rem
+    }
+}
+
+.tab-group-title {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    flex: 1 1 200px;
+    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(99, 99, 99);
+    position: relative;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 1px solid rgb(99, 99, 99);
+    font-weight: 600
+}
+
+.tab-group-title-container {
+    justify-content: center;
+    margin-bottom: 20px
+}
+
+@media (min-width:1025px) {
+    .tab-group-title-container {
+        margin-bottom: 10px
+    }
+}
+
+.tab-group-title.-active {
+    color: #fff;
+    background: rgb(126, 126, 126);
+    border: rgb(126, 126, 126);
+}
+
+.tab-group-title.-active:after {
+    content: "";
+    background: rgb(126, 126, 126);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%) rotate(45deg)
+}
