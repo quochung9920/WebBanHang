@@ -1,0 +1,22 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.jpg$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.jpeg$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.png$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.gif$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.svg$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.pdf$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.mp4$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.doc$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.docx$
+
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.JPG$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.JPEG$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.PNG$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.GIF$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.SVG$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.PDF$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.MP4$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.DOC$
+RewriteCond %{REQUEST_FILENAME} !^(.+)\.DOCX$
+RewriteRule ^(.+)$ /404.html [NC]
